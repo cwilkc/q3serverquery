@@ -1,2 +1,2 @@
 # q3serverquery
-A library to query Quake 3 master servers and game servers.
+A library to query Quake 3 master servers and game servers written in Python.
