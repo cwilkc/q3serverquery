@@ -1,6 +1,6 @@
 import socket
 
-class Server(object):
+class Quake3Server(object):
     
     def __init__(
         self,

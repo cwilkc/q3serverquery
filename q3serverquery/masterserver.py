@@ -1,9 +1,9 @@
 import socket
 import concurrent.futures
 import re
-from .server import Server
+from .server import Quake3Server
 
-class MasterServer(object):
+class Quake3MasterServer(object):
     
     def __init__(
         self,
@@ -68,7 +68,7 @@ class MasterServer(object):
                         ip_octets.append(str(data[i + j]))
 
                     self.servers.append(
-                        Server(
+                        Quake3Server(
                             ".".join(ip_octets),
                             (data[i + 5]<<8) + data[i + 6]
                         )
