@@ -1,12 +1,11 @@
-from q3serverquery.server import Server
-import socket
+from q3serverquery.server import Quake3Server
 from pprint import pprint
 import re
 import time
 
 start = time.perf_counter()
 
-server = Server('lan.fubar.gg', 27960)
+server = Quake3Server('127.0.0.1', 27960)
 
 server.get_info()
 server.get_status()
